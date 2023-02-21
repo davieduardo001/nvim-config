@@ -60,25 +60,19 @@ map("n", "<leader>e", "<CMD>Lexplore<CR>", opts)
 
 --PACKAGES
 vim.cmd [[packadd packer.nvim]]
---vim.cmd 'colorscheme dracula'
-vim.cmd 'colorscheme desert'
+vim.cmd 'colorscheme habamax'
+--vim.cmd 'colorscheme gruvbox'
 
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
-  -- Simple plugins can be specified as strings
+  -- Simple plugins 
+  use 'nvim-lua/completion-nvim'
   use 'rstacruz/vim-closer'
 
-  -- Plugins can have dependencies on other plugins
-  use {
-    'haorenW1025/completion-nvim',
-
-    requires = {{'hrsh7th/vim-vsnip', opt = true}, {'hrsh7th/vim-vsnip-integ', opt = true}}
-  }
-
   -- Colors
-  use {'dracula/vim', as = 'dracula'}
+  use {"ellisonleao/gruvbox.nvim", as = 'gruvbox'}
 end)
 
 
