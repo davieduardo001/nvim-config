@@ -67,10 +67,6 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
-  -- Simple plugins 
-  use 'nvim-lua/completion-nvim'
-  use 'rstacruz/vim-closer'
-
   -- Colors
   use {"ellisonleao/gruvbox.nvim", as = 'gruvbox'}
 end)
