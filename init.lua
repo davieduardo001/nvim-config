@@ -17,7 +17,6 @@ o.termguicolors = true
 o.timeoutlen = 500
 o.updatetime = 200
 
-
 ---numbers of line will keep above the cursor
 o.scrolloff = 8
 
