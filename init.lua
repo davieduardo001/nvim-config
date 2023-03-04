@@ -66,12 +66,6 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
-  --yarayarayara
-  use {
-    "windwp/nvim-autopairs",
-    config = function() require("nvim-autopairs").setup {} end
-  }
-
   -- Colors
   use {"ellisonleao/gruvbox.nvim", as = 'gruvbox'}
 end)
