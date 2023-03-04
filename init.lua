@@ -59,8 +59,8 @@ map("n", "<leader>e", "<CMD>Lexplore<CR>", opts)
 
 --PACKAGES
 vim.cmd [[packadd packer.nvim]]
---vim.cmd 'colorscheme habamax'
-vim.cmd 'colorscheme gruvbox'
+vim.cmd 'colorscheme habamax'
+--vim.cmd 'colorscheme gruvbox'
 
 return require('packer').startup(function(use)
   -- Packer can manage itself
